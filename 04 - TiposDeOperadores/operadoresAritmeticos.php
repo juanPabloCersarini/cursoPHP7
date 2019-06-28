@@ -2,7 +2,7 @@
 /*OPERADORES ARITMETICOS
 * + - * / % ++ --
 * OPERADORES DE COMPARACION
-* == < > != <= >=
+* === == < > != <= >=
 * OPERADORES LOGICOS
 * and or && || !
 * OPERADORES DE ASIGNACION
