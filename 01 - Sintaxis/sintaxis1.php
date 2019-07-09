@@ -31,7 +31,7 @@ echo $textoEntreComillas;
 echo $caracterDeEscape;
 
 // Para que se vea separado se debe concatenar con . y <br> es el salto de página
-echo "<br>"."Mostrando el contenido de las variables (Así se ve concatenando el saldo de línea):"."<br>";
+echo "<br>"."Mostrando el contenido de las variables (Así se ve concatenando el salto de línea):"."<br>";
 echo $numero . "<br>";
 echo $texto . "<br>";
 echo $_num . "<br>";
