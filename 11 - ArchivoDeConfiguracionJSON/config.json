@@ -1,0 +1,4 @@
+{
+    "db": { "servidor": "localhost", "usuario": "root", "password": "1234", "tabla": "baseClientes" },
+    "usuario": { "nombre": "pedro", "apellido": "cesarini", "estado": true }
+}
