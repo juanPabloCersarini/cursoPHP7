@@ -8,6 +8,7 @@
         $pst = $mysql-> prepare("insert into clientes values (null,?,?,?)");
         $pst -> bind_param('sss',$nombre,$apellido,$dire);
         $resultado = $pst->execute();
+        header("location:read.php");
 
 
     }
