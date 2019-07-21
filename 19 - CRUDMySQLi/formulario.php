@@ -11,11 +11,11 @@
     <form method = "post" action ="create.php">
         <p>
             <label>Nombre:</label>
-            <input type="text" name ="nombre" required="true" maxlength ="30" minlength="10"><br>
+            <input type="text" name ="nombre" required="true" maxlength ="30" minlength="3"><br>
             <label>Apellido:</label>
-            <input type="text" name ="apellido" required="true" maxlength ="30" minlength="10"><br>
+            <input type="text" name ="apellido" required="true" maxlength ="30" minlength="3"><br>
             <label>Dirección</label>
-            <input type="text" name ="dire" required="true" maxlength ="30" minlength="10"><br>
+            <input type="text" name ="dire" required="true" maxlength ="30" minlength="3"><br>
         </p>
         <input type ="submit" value="Guardar">
         <input type ="reset" value="Cancelar">
@@ -31,7 +31,7 @@
             <th>Opción</th>
         </tr>
     <?php
-        include("select.php");
+        include("conexion.php");
         $clientes = $mysql->query("select * from clientes");
         foreach ($clientes as $c) {
             echo "
