@@ -17,7 +17,7 @@
             <th>Opción</th>
         </tr>
     <?php
-        include("select.php");
+        include("conexion.php");
         $clientes = $mysql->query("select * from clientes");
         foreach ($clientes as $c) {
             echo "
