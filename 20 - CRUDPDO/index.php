@@ -31,7 +31,6 @@
     require("conexion.php");
     $pdo = new Conexion();
     $clientes = $pdo->cnx->query("select * from clientes");
-    print_r($clientes);
     foreach ($clientes as $cli) {
         echo "<tr>
                 <td>{$cli['idCli']}</td>
