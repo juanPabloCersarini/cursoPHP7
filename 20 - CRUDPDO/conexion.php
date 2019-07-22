@@ -2,12 +2,11 @@
     class Conexion{
         public $cnx = null;
 
-        function __constructor(){
+        function __construct(){
             try {
-                $this->cnx  = $this->getConnection();
-
-            } catch (PDOException $e) {
-                echo $e -> getMessage();
+                $this->cnx=$this->getConnection();
+            } catch (PDOException $ex) {
+                echo $ex -> getMessage();
             }
         }
 
@@ -17,16 +16,12 @@
             $pass = "";
             $db = "basecursophp7";
             $charset ="utf8";
+            $dsn = "mysql:host=$host:3306;dbname=$db;charset=$charset";
             $opt = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
 
-            $pdo = new pdo("mysql:host={$host};
-                            dname={$db};
-                            charset={$charset};",
-                            $user,
-                            $pass,
-                            $opt);
+            $pdo = new pdo($dsn, $user, $pass, $opt);
             
-            $pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $pdo;
         }
     }
