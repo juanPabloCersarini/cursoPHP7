@@ -8,14 +8,14 @@
 </head>
 <body>
     <h1>Ingreso de datos</h1>
-    <form method = "post" action ="create.php">
+    <form method = "post" action ="createPDO.php">
         <p>
             <label>Nombre:</label>
             <input type="text" name ="nombre" required="true" maxlength ="30" minlength="3"><br>
             <label>Apellido:</label>
             <input type="text" name ="apellido" required="true" maxlength ="30" minlength="3"><br>
             <label>Dirección</label>
-            <input type="text" name ="dire" required="true" maxlength ="100" minlength="3"><br>
+            <input type="text" name ="dire" required="true" maxlength ="30" minlength="3"><br>
         </p>
         <input type ="submit" value="Guardar">
         <input type ="reset" value="Cancelar">
